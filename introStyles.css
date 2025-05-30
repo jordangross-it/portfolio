@@ -185,8 +185,13 @@ button {
 }
 
 button:hover {
-  background-color: #b57b6a;
+  background-color: #ff7f5d;
   transform: translateY(-2px);
+}
+
+.link-text:hover{
+    color: #ff7f5d; 
+    transform: translateY(-2px);
 }
 
 #footer {
