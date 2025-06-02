@@ -9,10 +9,10 @@ body {
     height: 100%;
 }
 
-p, li, a {
+p, li, a, textarea, input {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
-    color:rgb(22, 21, 21)
+    color:#151516;
 }
 
 h1 {
@@ -23,11 +23,11 @@ h1 {
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 37px;
-    color:#161515;
+    color:#151516;
 }
 
 #nav-bar {
-    background-color: #161515;
+    background-color: #151516;
     width: 100vw;
     position: fixed;
     z-index: 999;
@@ -37,11 +37,11 @@ h2 {
 .nav {
     display: flex;
     justify-content: center;
-    background-color: #161515;
+    background-color: #151516;
 }
 
 .nav > a:hover {
-    background-color: #ff7f5d;
+    background-color: rgb(100, 174, 220);
     transform: translateY(-2px);
 }
 
@@ -55,12 +55,12 @@ h2 {
 }
 
 .wel-Header {
-    color: rgb(255, 255, 255);
+    color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url(warmWaves.png) center;
+    background: url(wave011.jpg) left;
     padding-top: 190px;
     padding-bottom: 130px;
     width: 100vw;
@@ -69,12 +69,12 @@ h2 {
 }
 
 .abo-Header {
-    color: rgb(255, 255, 255);
+    color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url(waves2.png) center;
+    background: url(wave011.jpg) left;
     padding-top: 190px;
     padding-bottom: 130px;
     width: 100vw;
@@ -83,12 +83,12 @@ h2 {
 }
 
 .res-Header {
-    color: rgb(255, 255, 255);
+    color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url(waves2.png) center center no-repeat;
+    background: url(wave011.jpg) left;
     padding-top: 190px;
     padding-bottom: 130px;
     width: 100vw;
@@ -97,7 +97,7 @@ h2 {
 }
 
 #tagline {
-    color: #ff7f5d;
+    color: rgb(100, 174, 220);
     font-weight: bold;
     padding-top: 30px;
 }
@@ -107,7 +107,7 @@ h2 {
 }
 
 #main-text {
-    background-color:#ffffff;
+    background-color:white;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -120,7 +120,7 @@ h2 {
 }
 
 #sub-text {
-    background-color: #ff7f5d;
+    background-color: rgb(100, 174, 220);
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -137,12 +137,9 @@ h2 {
     flex-direction: rows;
 }
 
-.li-h:hover {
-    background-color: #f8a389;
-}
 
 form {
-  background: #ffffff;
+  background: white;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 300px;
@@ -153,7 +150,7 @@ form {
 
 input, textarea {
   font-size: 18px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(223, 229, 233);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -164,12 +161,12 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  border-color: #f8a389;
+  border-color: rgb(100, 174, 220);
   outline: none;
 }
 
 button {
-  background-color: #f8a389;
+  background-color: rgb(100, 174, 220);
   color: white;
   border: none;
   font-size: 18px;
@@ -185,24 +182,23 @@ button {
 }
 
 button:hover {
-  background-color: #ff7f5d;
+  background-color:rgb(69, 138, 181);
   transform: translateY(-2px);
 }
 
 .link-text:hover{
-    color: #ff7f5d; 
-    transform: translateY(-2px);
+    color: rgb(100, 174, 220); 
 }
 
 #footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #161515;
+    background-color: #151516;
     width: 100vw;
     padding: 15px;
 }
 
 #footer > p {
-    color: rgb(123, 112, 112);
+    color: rgb(112, 113, 123);
 }
