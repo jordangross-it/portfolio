@@ -27,7 +27,7 @@ h2 {
 }
 
 #nav-bar {
-    background-color: #151516;
+    background-color: black;
     width: 100vw;
     position: fixed;
     z-index: 999;
@@ -37,16 +37,15 @@ h2 {
 .nav {
     display: flex;
     justify-content: center;
-    background-color: #151516;
+    background-color: black;
 }
 
 .nav > a:hover {
-    background-color: rgb(100, 174, 220);
-    transform: translateY(-2px);
+    background-color: #5ba4f7;
 }
 
 .nav > a {
-    color: white;
+    color: #f1f8ff;
     padding: 10px 24px;
     font-size: 16px;
     font-weight: bold;
@@ -55,26 +54,12 @@ h2 {
 }
 
 .wel-Header {
-    color: white;
+    color: #f1f8ff;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url(wave011.jpg) left;
-    padding-top: 190px;
-    padding-bottom: 130px;
-    width: 100vw;
-    height: 70vh;
-    margin: 0px;
-}
-
-.abo-Header {
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background: url(wave011.jpg) left;
+    background: url(tech2.2.png) center;
     padding-top: 190px;
     padding-bottom: 130px;
     width: 100vw;
@@ -83,12 +68,12 @@ h2 {
 }
 
 .res-Header {
-    color: white;
+    color: #f1f8ff;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url(wave011.jpg) left;
+    background: url(tech2.2.png) center;
     padding-top: 190px;
     padding-bottom: 130px;
     width: 100vw;
@@ -97,7 +82,7 @@ h2 {
 }
 
 #tagline {
-    color: rgb(100, 174, 220);
+    color: #5ba4f7;
     font-weight: bold;
     padding-top: 30px;
 }
@@ -120,7 +105,7 @@ h2 {
 }
 
 #sub-text {
-    background-color: rgb(100, 174, 220);
+    background-color: #5ba4f7;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -134,7 +119,7 @@ h2 {
 
 .subSection {
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
 }
 
 
@@ -150,7 +135,7 @@ form {
 
 input, textarea {
   font-size: 18px;
-  border: 1px solid rgb(223, 229, 233);
+  border: 1px solid #dfe5e9;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -161,12 +146,12 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  border-color: rgb(100, 174, 220);
+  border-color: #5ba4f7;
   outline: none;
 }
 
 button {
-  background-color: rgb(100, 174, 220);
+  background-color: #5ba4f7;
   color: white;
   border: none;
   font-size: 18px;
@@ -182,23 +167,70 @@ button {
 }
 
 button:hover {
-  background-color:rgb(69, 138, 181);
+  background-color:#284e81;
   transform: translateY(-2px);
 }
 
 .link-text:hover{
-    color: rgb(100, 174, 220); 
+    color: #5ba4f7; 
 }
 
 #footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #151516;
+    background-color: black;
     width: 100vw;
     padding: 15px;
 }
 
 #footer > p {
-    color: rgb(112, 113, 123);
+    color: #a2aabd;
+}
+
+/* Mobile/Small screens */
+
+@media screen and (max-width: 768px) {
+    #main-text,
+    #sub-text,
+    form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    input,
+    textarea,
+    button {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav > a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .wel-Header,
+    .res-Header {
+        padding-top: 120px;
+        padding-bottom: 80px;
+        height: auto;
+    }
+
+    .subSection {
+        flex-direction: column;
+    }
 }
