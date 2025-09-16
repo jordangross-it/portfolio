@@ -12,43 +12,40 @@ body {
 p, li, a, textarea, input {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
-    color:#151516;
+    color:#dee1e3;
 }
 
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 47px;
+    font-size: 56px;
 }
 
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 37px;
-    color:#151516;
-}
-
-#nav-bar {
-    background-color: black;
-    width: 100vw;
-    position: fixed;
-    z-index: 999;
-    padding: 8px 0;
+    color: #dee1e3;
 }
 
 .nav {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #141617;
+    width: 100vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
 }
 
 .nav > a:hover {
-    background-color: #5ba4f7;
+    background-color: #1d2024;
 }
 
 .nav > a {
     color: #f1f8ff;
     padding: 10px 24px;
     font-size: 16px;
-    font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -59,7 +56,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url(tech2.2.png) center;
+    background: url(heroImg2.png) center;
     padding-top: 190px;
     padding-bottom: 130px;
     width: 100vw;
@@ -73,7 +70,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url(tech2.2.png) center;
+    background: url(heroImg2.png) center;
     padding-top: 190px;
     padding-bottom: 130px;
     width: 100vw;
@@ -82,9 +79,9 @@ h2 {
 }
 
 #tagline {
-    color: #5ba4f7;
+    color: #5b9fff;
     font-weight: bold;
-    padding-top: 30px;
+    padding-top: 32px;
 }
 
 .section-headers {
@@ -92,7 +89,7 @@ h2 {
 }
 
 #main-text {
-    background-color:white;
+    background-color: #101214;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -105,7 +102,7 @@ h2 {
 }
 
 #sub-text {
-    background-color: #5ba4f7;
+    background-color: #101214;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -124,7 +121,8 @@ h2 {
 
 
 form {
-  background: white;
+  background: #101214;
+  color: #dee1e3;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 300px;
@@ -135,7 +133,8 @@ form {
 
 input, textarea {
   font-size: 18px;
-  border: 1px solid #dfe5e9;
+  background: #101214;
+  border: 1px solid #1c1f23;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -167,8 +166,7 @@ button {
 }
 
 button:hover {
-  background-color:#284e81;
-  transform: translateY(-2px);
+  background-color:rgb(32, 66, 109);
 }
 
 .link-text:hover{
@@ -177,15 +175,124 @@ button:hover {
 
 #footer {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: black;
+    flex-direction: row;
+    background-color: #141617;
     width: 100vw;
-    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
 }
 
-#footer > p {
-    color: #a2aabd;
+#footer > p, .ftText > p {
+    color: #7d828f;
+    font-size: 14px;
+}
+
+.socials > a {
+    color: #7d828f;
+    font-size: 24px;
+    padding-right: 15px;
+}
+
+.socials {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 10px;
+}
+
+#main-text > .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#footer > .socials > .linkedin > a {
+    color: #7d828f;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#footer > .socials > .email > a {
+    color: #7d828f;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#footer > .socials > .github > a {
+    color: #7d828f;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#footer > .socials > .linkedin > a:hover {
+    color: #0077B5;
+    cursor: pointer;
+}
+
+#footer > .socials > .email > a:hover {
+    color: #a97f0d;
+    cursor: pointer;
+}
+
+#footer > .socials > .github > a:hover {
+    color: #08872B;
+    cursor: pointer;
+}
+
+#main-text > .socials2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#main-text > .socials2 > .linkedin > a {
+    color: #7d828f;
+    font-size: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#main-text > .socials2 > .email > a {
+    color: #7d828f;
+    font-size: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#main-text > .socials2 > .github > a {
+    color: #7d828f;
+    font-size: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#main-text > .socials2 > .linkedin > a:hover {
+    color: #0077B5;
+    cursor: pointer;
+}
+
+#main-text > .socials2 > .email > a:hover {
+    color: #a97f0d;
+    cursor: pointer;
+}
+
+#main-text > .socials2 > .github > a:hover {
+    color: #08872B;
+    cursor: pointer;
+}
+
+
+.ftText {
+    display: flex;
+    justify-content: end;
+    padding-left: 20px;
 }
 
 /* Mobile/Small screens */
