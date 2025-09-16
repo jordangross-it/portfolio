@@ -17,7 +17,7 @@ p, li, a, textarea, input {
 
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 56px;
+    font-size: 100px;
 }
 
 h2 {
@@ -57,7 +57,7 @@ h2 {
     flex-direction: column;
     text-align: center;
     background: url(heroImg2.png) center;
-    padding-top: 190px;
+    padding-top: 40px;
     padding-bottom: 130px;
     width: 100vw;
     height: 70vh;
@@ -78,8 +78,9 @@ h2 {
     margin: 0px;
 }
 
-#tagline {
-    color: #5b9fff;
+.tagline {
+    color: #f1f8ff;
+    font-size: 33px;
     font-weight: bold;
     padding-top: 32px;
 }
@@ -249,30 +250,18 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+    gap: 60px; /* wider spacing on large screens */
     padding-bottom: 30px;
 }
 
-#main-text > .socials2 > .linkedin > a {
+#main-text > .socials2 a {
     color: #7d828f;
     font-size: 100px;
-    padding-right: 50px;
-    padding-left: 50px;
+    transition: color 0.2s ease;
 }
 
-#main-text > .socials2 > .email > a {
-    color: #7d828f;
-    font-size: 100px;
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-#main-text > .socials2 > .github > a {
-    color: #7d828f;
-    font-size: 100px;
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
+/* hover states */
 #main-text > .socials2 > .linkedin > a:hover {
     color: #0077B5;
     cursor: pointer;
@@ -339,5 +328,24 @@ button:hover {
 
     .subSection {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    #main-text > .socials2 {
+        gap: 30px; /* reduce spacing */
+    }
+    #main-text > .socials2 a {
+        font-size: 70px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    #main-text > .socials2 {
+        gap: 20px; /* tighter on mobile */
+    }
+    #main-text > .socials2 a {
+        font-size: 50px;
     }
 }
