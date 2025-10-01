@@ -26,13 +26,17 @@ h2 {
     color: #dee1e3;
 }
 
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    color: #dee1e3;
+}
+
 .nav {
     display: flex;
     justify-content: center;
-    background-color: #141617;
+    background-color: #151718;
     width: 100vw;
-    padding-top: 5px;
-    padding-bottom: 5px;
     position: sticky;
     z-index: 100;
     top: 0;
@@ -44,7 +48,7 @@ h2 {
 
 .nav > a {
     color: #f1f8ff;
-    padding: 10px 24px;
+    padding: 20px 30px 20px 30px;
     font-size: 16px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -56,7 +60,8 @@ h2 {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url(heroImg2.png) center;
+    background: url(images/heroImg2.png) center;
+    background-color: #040e2a;
     padding-top: 40px;
     padding-bottom: 130px;
     width: 100vw;
@@ -70,7 +75,8 @@ h2 {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url(heroImg2.png) center;
+    background: url(images/heroImg2.png) center;
+    background-color: #040e2a;
     padding-top: 190px;
     padding-bottom: 130px;
     width: 100vw;
@@ -81,7 +87,6 @@ h2 {
 .tagline {
     color: #f1f8ff;
     font-size: 33px;
-    font-weight: bold;
     padding-top: 32px;
 }
 
@@ -151,7 +156,7 @@ input:focus, textarea:focus {
 }
 
 button {
-  background-color: #5ba4f7;
+  background-color: #335dc0;
   color: white;
   border: none;
   font-size: 18px;
@@ -167,7 +172,7 @@ button {
 }
 
 button:hover {
-  background-color:rgb(32, 66, 109);
+  background-color:#1f3e87;
 }
 
 .link-text:hover{
@@ -177,7 +182,7 @@ button:hover {
 #footer {
     display: flex;
     flex-direction: row;
-    background-color: #141617;
+    background-color: #151718;
     width: 100vw;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -189,6 +194,12 @@ button:hover {
 #footer > p, .ftText > p {
     color: #7d828f;
     font-size: 14px;
+}
+
+.resSocials {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .socials > a {
@@ -257,7 +268,7 @@ button:hover {
 
 #main-text > .socials2 a {
     color: #7d828f;
-    font-size: 100px;
+    font-size: 90px;
     transition: color 0.2s ease;
 }
 
@@ -284,6 +295,52 @@ button:hover {
     padding-left: 20px;
 }
 
+.projects-intro {
+    padding-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0;
+}
+
+.project-card {
+  background: #151718;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+}
+
+.project-preview {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #335dc0;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1f3e87;
+}
+
+
 /* Mobile/Small screens */
 
 @media screen and (max-width: 768px) {
@@ -303,11 +360,20 @@ button:hover {
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 40px;
+    }
+
+    .tagline {
+        font-size: 22px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 30px;
+    }
+
+     body, p {
+        font-size: 17px;
+        line-height: 1.5; 
     }
 
     .nav {
