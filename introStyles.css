@@ -16,7 +16,7 @@ textarea,
 input {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
-    color: #dee1e3;
+    color: #f1f1f1;
 }
 
 h1 {
@@ -27,19 +27,19 @@ h1 {
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 37px;
-    color: #dee1e3;
+    color: #f1f1f1;
 }
 
 h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 26px;
-    color: #dee1e3;
+    color: #f1f1f1;
 }
 
 .nav {
     display: flex;
     justify-content: center;
-    background-color: #151718;
+    background-color: #1a1b1d;
     width: 100vw;
     position: sticky;
     z-index: 100;
@@ -47,11 +47,11 @@ h3 {
 }
 
 .nav>a:hover {
-    background-color: #1d2024;
+    background-color: #1c1e20;
 }
 
 .nav>a {
-    color: #f1f8ff;
+    color: #f1f1f1;
     padding: 20px 30px 20px 30px;
     font-size: 16px;
     text-decoration: none;
@@ -59,7 +59,7 @@ h3 {
 }
 
 .wel-Header {
-    color: #f1f8ff;
+    color: #f1f1f1;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -74,7 +74,7 @@ h3 {
 }
 
 .res-Header {
-    color: #f1f8ff;
+    color: #f1f1f1;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -89,7 +89,7 @@ h3 {
 }
 
 .tagline {
-    color: #f1f8ff;
+    color: #f1f1f1;
     font-size: 33px;
     padding-top: 32px;
 }
@@ -99,7 +99,7 @@ h3 {
 }
 
 #main-text {
-    background-color: #101214;
+    background-color: #1f2022;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -112,7 +112,7 @@ h3 {
 }
 
 #sub-text {
-    background-color: #101214;
+    background-color: #1f2022;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -131,8 +131,8 @@ h3 {
 
 
 form {
-    background: #101214;
-    color: #dee1e3;
+    background: #1f2022;
+    color: #f1f1f1;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 300px;
@@ -144,8 +144,8 @@ form {
 input,
 textarea {
     font-size: 18px;
-    background: #101214;
-    border: 1px solid #1c1f23;
+    background: #1f2022;
+    border: 1px solid #2b2e31;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -163,10 +163,9 @@ textarea:focus {
 
 button {
     background-color: #335dc0;
-    color: white;
+    color: #f1f1f1;
     border: none;
     font-size: 18px;
-    font-weight: bold;
     cursor: pointer;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -188,7 +187,7 @@ button:hover {
 #footer {
     display: flex;
     flex-direction: row;
-    background-color: #151718;
+    background-color: #17181a;
     width: 100vw;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -316,7 +315,7 @@ button:hover {
 }
 
 .project-card {
-    background: #151718;
+    background: #1a1b1d;
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.2s ease;
@@ -340,7 +339,7 @@ button:hover {
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
     background: #335dc0;
-    color: #fff;
+    color: #f1f1f1;
     text-decoration: none;
     transition: background 0.3s ease;
 }
