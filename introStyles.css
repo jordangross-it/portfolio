@@ -22,6 +22,7 @@ input {
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 100px;
+    padding-top: 140px;
 }
 
 h2 {
@@ -38,21 +39,66 @@ h3 {
 
 .nav {
     display: flex;
-    justify-content: center;
-    background-color: #1a1b1d;
+    justify-content: space-between;
+    background: #022121;
+    background: linear-gradient(0deg, rgba(2, 33, 33, 0) 0%, rgb(0, 5, 28) 100%);
     width: 100vw;
     position: sticky;
     z-index: 100;
     top: 0;
+    padding-right: 20px;
+}
+
+#navSoc {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 20px 30px 20px 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    justify-content: start;
+}
+
+#navSoc>.socials>.linkedin>a:hover {
+    color: #0077B5;
+    cursor: pointer;
+}
+
+#navSoc>.socials>.email>a:hover {
+    color: #a97f0d;
+    cursor: pointer;
+}
+
+#navSoc>.socials>.github>a:hover {
+    color: #08872B;
+    cursor: pointer;
+}
+
+#navSoc>.socials>.linkedin>a {
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#navSoc>.socials>.email>a {
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#navSoc>.socials>.github>a {
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .nav>a:hover {
-    background-color: #1c1e20;
+    color: #acb2b6;
 }
 
 .nav>a {
     color: #f1f1f1;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 20px 20px 30px;
     font-size: 16px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -66,10 +112,9 @@ h3 {
     text-align: center;
     background: url(images/heroImg2.png) center;
     background-color: #040e2a;
-    padding-top: 40px;
-    padding-bottom: 130px;
+    padding-bottom: 170px;
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     margin: 0px;
 }
 
@@ -99,16 +144,41 @@ h3 {
 }
 
 #main-text {
-    background-color: #1f2022;
+    background-color: #11131a;
     display: flex;
     justify-content: start;
     flex-direction: column;
     text-align: start;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 270px;
+    padding-right: 270px;
     line-height: 1.6;
+}
+
+.homeText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+#home-hand {
+    color: #297dae;
+    font-size: 150px;
+    padding-right: 70px;
+}
+
+#home-rocket {
+    color: #ae2929;
+    font-size: 150px;
+    padding-right: 70px;
+}
+
+#spacer {
+    display: block;
+    height: 70px;
+    width: 100%;
 }
 
 #sub-text {
@@ -131,7 +201,7 @@ h3 {
 
 
 form {
-    background: #1f2022;
+    background: #11131a;
     color: #f1f1f1;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -144,8 +214,8 @@ form {
 input,
 textarea {
     font-size: 18px;
-    background: #1f2022;
-    border: 1px solid #2b2e31;
+    background: #11131a;
+    border: 1px solid #222432;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -157,12 +227,12 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border-color: #5ba4f7;
+    border-color: #335dc0;
     outline: none;
 }
 
 button {
-    background-color: #335dc0;
+    background-color: #293aae;
     color: #f1f1f1;
     border: none;
     font-size: 18px;
@@ -177,17 +247,17 @@ button {
 }
 
 button:hover {
-    background-color: #1f3e87;
+    background-color: #1d2b89;
 }
 
 .link-text:hover {
-    color: #5ba4f7;
+    color: #293aae;
 }
 
 #footer {
     display: flex;
     flex-direction: row;
-    background-color: #17181a;
+    background-color: #0c0d12;
     width: 100vw;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -269,9 +339,7 @@ button:hover {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    /* allow wrapping on smaller screens */
     gap: 60px;
-    /* wider spacing on large screens */
     padding-bottom: 30px;
 }
 
@@ -281,7 +349,6 @@ button:hover {
     transition: color 0.2s ease;
 }
 
-/* hover states */
 #main-text>.socials2>.linkedin>a:hover {
     color: #0077B5;
     cursor: pointer;
@@ -316,7 +383,7 @@ button:hover {
 }
 
 .project-card {
-    background: #1a1b1d;
+    background: #0c0d12;
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.2s ease;
@@ -339,14 +406,14 @@ button:hover {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
-    background: #335dc0;
+    background: #293aae;
     color: #f1f1f1;
     text-decoration: none;
     transition: background 0.3s ease;
 }
 
 .btn:hover {
-    background: #1f3e87;
+    background: #1d2b89;
 }
 
 #backToTop {
@@ -358,7 +425,7 @@ button:hover {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #335dc0;
+    background-color: #293aae;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -369,12 +436,11 @@ button:hover {
 }
 
 #backToTop:hover {
-    background-color: #1f3e87;
+    background-color: #1d2b89;
 }
 
 #backToTop i {
     font-size: 18px;
-    /* default for desktop */
     display: block;
 }
 
@@ -384,10 +450,29 @@ button:hover {
 @media screen and (max-width: 768px) {
 
     #main-text,
-    #sub-text,
+    #sub-text{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     form {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .homeText {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #home-hand {
+        font-size: 60px;
+        align-self: center;
+    }
+
+    #home-rocket {
+        font-size: 60px;
+        align-self: center;
     }
 
     input,
@@ -399,20 +484,20 @@ button:hover {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .tagline {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     body,
     p {
-        font-size: 17px;
+        font-size: 14px;
         line-height: 1.5;
     }
 
