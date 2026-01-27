@@ -49,6 +49,30 @@ h3 {
     padding-right: 20px;
 }
 
+.nav-links {
+    display: flex;
+    gap: 15px; /* spacing between links */
+}
+
+.nav-links a {
+    color: #f1f1f1;
+    padding: 20px 20px 20px 30px; /* match desktop nav padding */
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #afb0bb; /* match desktop hover */
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    line-height: 1;
+}
+
 #navSoc {
     display: flex;
     flex-direction: row;
@@ -93,7 +117,7 @@ h3 {
 }
 
 .nav>a:hover {
-    color: #acb2b6;
+    color: #afb0bb;
 }
 
 .nav>a {
@@ -450,7 +474,7 @@ button:hover {
 @media screen and (max-width: 768px) {
 
     #main-text,
-    #sub-text{
+    #sub-text {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -501,20 +525,42 @@ button:hover {
         line-height: 1.5;
     }
 
-    .nav {
-        flex-wrap: wrap;
+    #navSoc > .socials {
+        align-content: center;
     }
 
-    .nav>a {
-        font-size: 14px;
-        padding: 8px 12px;
+    .hamburger {
+        display: block;
+        padding-top: 18px;
+        font-size: 28px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background: linear-gradient(0deg, rgba(2, 33, 33, 0) 0%, rgb(0, 5, 28) 100%);
+        position: absolute;
+        top: 60px;
+        /* adjust based on nav height */
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        z-index: 999;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+    }
+
+    .nav-links.show {
+        display: flex;
     }
 
     .wel-Header,
     .res-Header {
-        padding-top: 120px;
-        padding-bottom: 80px;
-        height: auto;
+        height: 50vh;
     }
 
     .subSection {
