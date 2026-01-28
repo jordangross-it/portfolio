@@ -52,7 +52,7 @@ h3 {
 
 .nav-links {
     display: flex;
-    gap: 15px; /* spacing between links */
+    gap: 5px; /* spacing between links */
 }
 
 .nav-links a {
@@ -122,7 +122,7 @@ h3 {
 }
 
 .nav>a {
-    color: #f1f1f1;
+    color: #6e95e3;
     padding: 20px 20px 20px 30px;
     font-size: 16px;
     text-decoration: none;
@@ -282,7 +282,7 @@ button:hover {
 #footer {
     display: flex;
     flex-direction: row;
-    background-color: #0c0d12;
+    background-color: #0f1017;
     width: 100vw;
     padding-top: 30px;
     padding-bottom: 10px;
