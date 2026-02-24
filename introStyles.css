@@ -15,25 +15,26 @@ li,
 a,
 textarea,
 input {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: #F0F8FF;
 }
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 100px;
-    padding-top: 140px;
+    font-weight: 700;
+    padding-top: 80px;
 }
 
 h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 37px;
     color: #F0F8FF;
 }
 
 h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 26px;
     color: #F0F8FF;
 }
@@ -41,30 +42,33 @@ h3 {
 .nav {
     display: flex;
     justify-content: space-between;
-    background: #022121;
+    align-items: center; 
     background: linear-gradient(0deg, rgba(2, 33, 33, 0) 0%, rgb(0, 5, 28) 100%);
-    width: 100vw;
-    position: sticky;
-    z-index: 100;
-    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
     padding-right: 20px;
+    z-index: 1000;
+    top: 0;
 }
 
 .nav-links {
     display: flex;
-    gap: 5px; /* spacing between links */
+    gap: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
 }
 
 .nav-links a {
     color: #F0F8FF;
-    padding: 20px 20px 20px 30px; /* match desktop nav padding */
+    padding: 20px 20px 20px 15px;
     font-size: 16px;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #bfcce8; /* match desktop hover */
+    color: #bfcce8;
 }
 
 .hamburger {
@@ -76,92 +80,78 @@ h3 {
 
 #navSoc {
     display: flex;
-    flex-direction: row;
-    width: 100vw;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 30px;
     font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    justify-content: start;
 }
 
-#navSoc>.socials>.linkedin>a:hover {
-    color: #0077B5;
-    cursor: pointer;
-}
-
-#navSoc>.socials>.email>a:hover {
-    color: #a97f0d;
-    cursor: pointer;
-}
-
-#navSoc>.socials>.github>a:hover {
-    color: #08872B;
-    cursor: pointer;
-}
-
-#navSoc>.socials>.linkedin>a {
+#navSoc .socials a {
     font-size: 18px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-#navSoc>.socials>.email>a {
-    font-size: 18px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-#navSoc>.socials>.github>a {
-    font-size: 18px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.nav>a:hover {
-    color: #afb6bb;
-}
-
-.nav>a {
-    color: #6e95e3;
-    padding: 20px 20px 20px 30px;
-    font-size: 16px;
+    padding: 0 10px;
+    transition: all 0.3s ease;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: inherit; 
+}
+
+#navSoc .socials .linkedin a:hover { color: #0077B5; }
+#navSoc .socials .email a:hover { color: #a97f0d; }
+#navSoc .socials .github a:hover { color: #08872B; }
+
+.wel-Header, .res-Header {
+    color: #F0F8FF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(images/heroImg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: #040e2a;
+    padding-top: 60px;
+    width: 100%; 
+    margin: 0;
 }
 
 .wel-Header {
-    color: #F0F8FF;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background: url(images/heroImg2.png) center;
-    background-color: #040e2a;
     padding-bottom: 210px;
-    width: 100vw;
     height: 80vh;
-    margin: 0px;
 }
 
 .res-Header {
-    color: #F0F8FF;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background: url(images/heroImg2.png) center;
-    background-color: #040e2a;
     padding-top: 190px;
     padding-bottom: 130px;
-    width: 100vw;
     height: 70vh;
-    margin: 0px;
 }
 
 .tagline {
     color: #F0F8FF;
     font-size: 33px;
-    padding-top: 32px;
+}
+
+.homeBtns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projects-button {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    max-width: 250px;
+    text-decoration: none;
+    color: #F0F8FF;
+    background-color: #113997;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.projects-button:hover {
+    background-color: #07198f;
+    transform: translateY(-2px);
 }
 
 .section-headers {
@@ -188,22 +178,50 @@ h3 {
     gap: 30px;
 }
 
-#home-hand {
-    color: #297dae;
-    font-size: 150px;
-    padding-right: 70px;
+.value-section {
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#home-rocket {
-    color: #ae2929;
-    font-size: 150px;
-    padding-right: 70px;
+.value-grid {
+    display: grid;
+    gap: 25px;
+    margin-top: 0px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-#spacer {
-    display: block;
-    height: 70px;
-    width: 100%;
+.value-card {
+    background: #111827;
+    padding: 40px 30px;
+    border-radius: 6px;
+    border: 1px solid #1f2937;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-3px);
+    border-color: #3b82f6;
+}
+
+.value-card i {
+    font-size: 2.5rem;
+    color: #3b82f6;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #94a3b8;
 }
 
 #sub-text {
@@ -236,11 +254,18 @@ form {
     flex-direction: column;
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: #f0f8ffc6;
+}
+
 input,
 textarea {
+    color: #F0F8FF;
     font-size: 18px;
     background: #11131a;
     border: 1px solid #222432;
+    border-radius: 6px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -257,7 +282,7 @@ textarea:focus {
 }
 
 button {
-    background-color: #293aae;
+    background-color: #113997;
     color: #F0F8FF;
     border: none;
     font-size: 18px;
@@ -268,22 +293,23 @@ button {
     padding-right: 10px;
     margin-left: -300px;
     margin-right: -300px;
+    border-radius: 6px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #1d2b89;
+    background-color: #07198f;
 }
 
 .link-text:hover {
-    color: #293aae;
+    color: #07198f;
 }
 
 #footer {
     display: flex;
     flex-direction: row;
     background-color: #0f1017;
-    width: 100vw;
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 10px;
     padding-left: 50px;
@@ -431,14 +457,14 @@ button:hover {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
-    background: #293aae;
+    background: #113997;
     color: #F0F8FF;
     text-decoration: none;
     transition: background 0.3s ease;
 }
 
 .btn:hover {
-    background: #1d2b89;
+    background: #07198f;
 }
 
 #backToTop {
@@ -450,18 +476,18 @@ button:hover {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #293aae;
+    background-color: #113997;
     color: #F0F8FF;
     cursor: pointer;
     padding: 15px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 6px;
+    transition: all 0.3s ease;
     margin: 0;
     /* <-- override negative margins */
 }
 
 #backToTop:hover {
-    background-color: #1d2b89;
+    background-color: #07198f;
 }
 
 #backToTop i {
@@ -515,6 +541,33 @@ button:hover {
         font-size: 20px;
     }
 
+    .homeBtns {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .projects-button {
+        display: flex;
+        text-wrap: wrap;
+        align-self: center;
+        justify-content: center;
+        max-width: 200px;
+        text-decoration: none;
+        color: #F0F8FF;
+        background-color: #113997;
+        padding: 7px 15px;
+        font-size: 14px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        margin-top: 30px;
+    }
+
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+
     h2 {
         font-size: 26px;
     }
@@ -525,13 +578,13 @@ button:hover {
         line-height: 1.5;
     }
 
-    #navSoc > .socials {
+    #navSoc>.socials {
         align-content: center;
     }
 
     .hamburger {
         display: block;
-        padding-top: 18px;
+        padding-bottom: 18px;
         font-size: 28px;
     }
 
@@ -539,7 +592,7 @@ button:hover {
         display: none;
         flex-direction: column;
         gap: 15px;
-        background: linear-gradient(0deg, rgba(2, 33, 33, 0) 0%, rgb(0, 5, 28) 100%);
+        background-color: rgb(0, 5, 28, 0.9);
         position: absolute;
         top: 60px;
         /* adjust based on nav height */
