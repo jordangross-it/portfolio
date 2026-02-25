@@ -668,16 +668,6 @@ button:hover {
         align-items: start;
     }
 
-    #home-hand {
-        font-size: 60px;
-        align-self: center;
-    }
-
-    #home-rocket {
-        font-size: 60px;
-        align-self: center;
-    }
-
     input,
     textarea,
     button:not(#backToTop) {
