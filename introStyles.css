@@ -363,40 +363,20 @@ button {
     border: none;
     font-size: 18px;
     cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 15px 30px;
     margin-left: -300px;
     margin-right: -300px;
     border-radius: 6px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
     background-color: #07198f;
+    transform: translateY(-2px);
 }
 
 .link-text:hover {
     color: #07198f;
-}
-
-#footer {
-    display: flex;
-    flex-direction: row;
-    background-color: #0f1017;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    justify-content: space-between;
-}
-
-#footer>p,
-.ftText>p {
-    color: #7d828f;
-    font-size: 14px;
 }
 
 .resSocials {
@@ -423,42 +403,6 @@ button:hover {
     flex-direction: row;
     justify-content: center;
     padding-bottom: 30px;
-}
-
-#footer>.socials>.linkedin>a {
-    color: #7d828f;
-    font-size: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-#footer>.socials>.email>a {
-    color: #7d828f;
-    font-size: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-#footer>.socials>.github>a {
-    color: #7d828f;
-    font-size: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-#footer>.socials>.linkedin>a:hover {
-    color: #0077B5;
-    cursor: pointer;
-}
-
-#footer>.socials>.email>a:hover {
-    color: #a97f0d;
-    cursor: pointer;
-}
-
-#footer>.socials>.github>a:hover {
-    color: #08872B;
-    cursor: pointer;
 }
 
 #main-text>.socials2 {
@@ -569,7 +513,6 @@ button:hover {
     margin-top: 5px;
 }
 
-/* PDF Section */
 #resume-view {
     padding: 40px 10%;
 }
@@ -601,12 +544,6 @@ button:hover {
     overflow: hidden;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     border: 1px solid #1f2937;
-}
-
-.ftText {
-    display: flex;
-    justify-content: end;
-    padding-left: 20px;
 }
 
 .projects-intro {
@@ -641,19 +578,15 @@ button:hover {
 .project-preview {
     width: 100%;
     height: 200px;
-    /* Fixed height keeps the grid uniform */
     object-fit: cover;
-    /* Crops image to fit perfectly */
     border-radius: 6px;
     margin-bottom: 1.5rem;
     border: 1px solid #1f2937;
-    /* Subtle frame for the image */ 
     transition: transform 0.3s ease;
 }
 
 .project-card:hover .project-preview {
     transform: scale(1.02);
-    /* Slight zoom on hover */
 }
 
 .project-card h3 {
@@ -667,7 +600,6 @@ button:hover {
     font-weight: 300;
     line-height: 1.5;
     color: #94a3b8;
-    /* Muted slate for better hierarchy */
     margin-bottom: 20px;
 }
 
@@ -704,7 +636,6 @@ button:hover {
     border-radius: 6px;
     transition: all 0.3s ease;
     margin: 0;
-    /* <-- override negative margins */
 }
 
 #backToTop:hover {
@@ -716,7 +647,82 @@ button:hover {
     display: block;
 }
 
-/* Mobile/Small screens */
+#main-footer {
+    background: #0f172a;
+    padding: 60px 10% 30px;
+    border-top: 1px solid #1f2937;
+    color: #f8fafc;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #3b82f6;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #1f2937;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #94a3b8;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    background: #3b82f6;
+    color: white;
+    transform: translateY(-3px);
+    border-color: #3b82f6;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.footer-subtext {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {}
+
 
 @media screen and (max-width: 768px) {
 
@@ -895,6 +901,16 @@ button:hover {
     .experience-wide {
         grid-column: auto;
     }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-container {
+        padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -907,7 +923,6 @@ button:hover {
     }
 }
 
-/* Mobile screens */
 @media (max-width: 480px) {
     #main-text>.socials2 {
         gap: 20px;
@@ -931,18 +946,5 @@ button:hover {
 
     #backToTop i {
         font-size: 16px;
-    }
-
-    #footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 15px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .ftText {
-        justify-content: center;
     }
 }
