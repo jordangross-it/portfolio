@@ -647,7 +647,7 @@ button:hover {
     border-radius: 6px;
     margin-bottom: 1.5rem;
     border: 1px solid #1f2937;
-    /* Subtle frame for the image */
+    /* Subtle frame for the image */ 
     transition: transform 0.3s ease;
 }
 
