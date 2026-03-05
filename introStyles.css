@@ -42,7 +42,7 @@ h3 {
 .nav {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     background: linear-gradient(0deg, rgba(2, 33, 33, 0) 0%, rgb(0, 5, 28) 100%);
     left: 0;
     right: 0;
@@ -89,14 +89,23 @@ h3 {
     padding: 0 10px;
     transition: all 0.3s ease;
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
 }
 
-#navSoc .socials .linkedin a:hover { color: #0077B5; }
-#navSoc .socials .email a:hover { color: #a97f0d; }
-#navSoc .socials .github a:hover { color: #08872B; }
+#navSoc .socials .linkedin a:hover {
+    color: #0077B5;
+}
 
-.wel-Header, .res-Header {
+#navSoc .socials .email a:hover {
+    color: #a97f0d;
+}
+
+#navSoc .socials .github a:hover {
+    color: #08872B;
+}
+
+.wel-Header,
+.res-Header {
     color: #F0F8FF;
     display: flex;
     justify-content: center;
@@ -105,10 +114,10 @@ h3 {
     background-image: url(images/heroImg2.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-color: #040e2a;
     padding-top: 60px;
-    width: 100%; 
+    width: 100%;
     margin: 0;
 }
 
@@ -244,7 +253,7 @@ h3 {
 
 #about-container {
     background-color: #11131a;
-    padding: 100px 10%; 
+    padding: 100px 10%;
     display: flex;
     justify-content: center;
 }
@@ -256,7 +265,7 @@ h3 {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr; 
+    grid-template-columns: 1.5fr 1fr;
     gap: 60px;
     align-items: center;
     margin-top: 30px;
@@ -265,7 +274,7 @@ h3 {
 .about-text p {
     margin-bottom: 20px;
     line-height: 1.8;
-    color: #94a3b8; 
+    color: #94a3b8;
 }
 
 .skill-tags {
@@ -493,6 +502,48 @@ button:hover {
     gap: 20px;
 }
 
+.experience-wide {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.experience-wide h3 {
+    margin-bottom: 5px;
+}
+
+.experience-wide .company-name {
+    color: #3b82f6;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.attr-list {
+    list-style: none;
+    padding: 0;
+}
+
+.attr-list li {
+    font-size: 15px;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.attr-list li::before {
+    content: "→";
+    color: #3b82f6;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
 .summary-card {
     background: #111827;
     padding: 30px;
@@ -507,12 +558,21 @@ button:hover {
     margin-bottom: 15px;
 }
 
-.summary-card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+.summary-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
 
-.summary-card .date { color: #94a3b8; font-size: 0.9rem; margin-top: 5px; }
+.summary-card .date {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
 
 /* PDF Section */
-#resume-view { padding: 40px 10%; }
+#resume-view {
+    padding: 40px 10%;
+}
 
 .resume-header {
     display: flex;
@@ -531,12 +591,15 @@ button:hover {
     transition: 0.3s;
 }
 
-.download-btn:hover { background: #07198f; transform: translateY(-2px); }
+.download-btn:hover {
+    background: #07198f;
+    transform: translateY(-2px);
+}
 
 .pdf-container {
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     border: 1px solid #1f2937;
 }
 
@@ -577,16 +640,20 @@ button:hover {
 
 .project-preview {
     width: 100%;
-    height: 200px; /* Fixed height keeps the grid uniform */
-    object-fit: cover; /* Crops image to fit perfectly */
+    height: 200px;
+    /* Fixed height keeps the grid uniform */
+    object-fit: cover;
+    /* Crops image to fit perfectly */
     border-radius: 6px;
     margin-bottom: 1.5rem;
-    border: 1px solid #1f2937; /* Subtle frame for the image */
+    border: 1px solid #1f2937;
+    /* Subtle frame for the image */
     transition: transform 0.3s ease;
 }
 
 .project-card:hover .project-preview {
-    transform: scale(1.02); /* Slight zoom on hover */
+    transform: scale(1.02);
+    /* Slight zoom on hover */
 }
 
 .project-card h3 {
@@ -599,7 +666,8 @@ button:hover {
     font-size: 15px;
     font-weight: 300;
     line-height: 1.5;
-    color: #94a3b8; /* Muted slate for better hierarchy */
+    color: #94a3b8;
+    /* Muted slate for better hierarchy */
     margin-bottom: 20px;
 }
 
@@ -762,45 +830,55 @@ button:hover {
         flex-direction: column;
     }
 
-    .resume-header { flex-direction: column; gap: 20px; text-align: center; }
-    .pdf-container embed { height: 500px; }
-    #resume-summary { padding: 40px 5%; }
+    .resume-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .pdf-container embed {
+        height: 500px;
+    }
+
+    #resume-summary {
+        padding: 40px 5%;
+    }
 
     .projects-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 10px;
     }
 
     .project-card {
-        padding: 20px; 
+        padding: 20px;
     }
 
     .project-preview {
-        height: 180px; 
+        height: 180px;
     }
-    
+
     .project-card h3 {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     #about-container {
-        padding: 40px 20px; /
+        padding: 40px 20px;/
     }
 
     .about-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         gap: 30px;
         text-align: left;
     }
 
     .about-image {
-        order: -1; 
+        order: -1;
         margin-bottom: 10px;
     }
 
     .image-frame img {
-        max-width: 100%; 
+        max-width: 100%;
         height: auto;
     }
 
@@ -812,6 +890,10 @@ button:hover {
     .skill-tags span {
         padding: 8px 12px;
         font-size: 13px;
+    }
+
+    .experience-wide {
+        grid-column: auto;
     }
 }
 
